@@ -12,12 +12,11 @@ How to use:
 2. Using steps:
   a. u_net_model = build_unet()
   
-  b. train_model_with_frequency(u_net_model, train_ds, val_ds) or train_baseline_model(u_net_model, train_ds,      val_ds)
+  b. train_model_with_frequency(u_net_model, train_ds, val_ds) or train_baseline_model(u_net_model, train_ds,val_ds)
+ 
+  c. preds_test = u_net_model.predict(x, verbose=1)  // after training the model, we can use the predict to check the reconstructed image
   
-  // after training the model, we can use the predict to check the reconstructed image
-  c. preds_test = u_net_model.predict(x, verbose=1)
-  
-  <img width="251" alt="image" src="https://user-images.githubusercontent.com/36893335/166965300-b16265f4-078a-47a3-ba49-e6144a1cf781.png">
+     <img width="251" alt="image" src="https://user-images.githubusercontent.com/36893335/166965300-b16265f4-078a-47a3-ba49-e6144a1cf781.png">
   
   d. then you can use these lines to get the final reconstruction image after k-correction: 
   
