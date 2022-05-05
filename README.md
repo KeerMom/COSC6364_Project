@@ -8,8 +8,14 @@ Reference:
 [2] Deep learning for undersampled MRI reconstruction 
 
 How to use:
-1. MRI_unet_with_k_correction.ipynb is the core code to implement the u-net, k-space correction and evaluation method:
-2. Using steps:
+1. MRI_unet_with_k_correction.ipynb is the core code to implement the u-net, k-space correction and evaluation method; 
+2. MRI_prepare_pairs_dataset.ipynb is to prepare the pairs of dataset: ground truth and downsampled images
+3. MRI_split_dataset.ipynb is to split the pairs of dataset, get this dataset structure:
+
+   <img width="119" alt="image" src="https://user-images.githubusercontent.com/36893335/166968459-d5ff9f19-6ce9-4bce-9c7f-f279595238dc.png">
+
+4. Using steps:
+
   a. u_net_model = build_unet()
   
   b. train_model_with_frequency(u_net_model, train_ds, val_ds) or train_baseline_model(u_net_model, train_ds,val_ds)
