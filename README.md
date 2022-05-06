@@ -1,4 +1,4 @@
-# COSC6364_Project
+# COSC_MRI_Project
 This project implementd fast MRI with U-Net and k-sapce correction using Keras.
 
 Dataset: https://fastmri.org/dataset/
